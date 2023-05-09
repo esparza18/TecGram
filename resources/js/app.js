@@ -12,7 +12,10 @@ const dropzone = new Dropzone('#dropzone',
 
 });
 
-dropzone.on('success',function(file,response)
+dropzone.on('success', function(file,response)
 {
-console.log(response)
+    document.querySelector('[name="imagen"]').value = response.imagen;
+    
+
 });
+

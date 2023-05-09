@@ -37,3 +37,5 @@ Route::get('/{user:username}', [MuroController::class,'index'])->name('muro.inde
 Route::get('muro/create', [MuroController::class,'create'])->name('muro.create');
 
 Route::post('/imagen',[ImagenController::class,'store'])->name('Imagen.store');
+
+Route::post('/muro', [MuroController::class,'store'])->name('muro.store');

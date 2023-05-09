@@ -41,6 +41,10 @@ Crear nueva publicación
             <p class="text-red-600 text-center mb-2"> {{$message}}</p>
            @enderror
            
+           <input type="hidden" name="imagen" value="{{old('imagen')}}">
+            @error('imagen')
+                <p class="text-red-700 my-2">{{$message}}</p>
+            @enderror
 
            <input class="bg-sky-600 text-white p-2 w-full rounded-lg font-bold hover:bg-sky-900 cursor-pointer" type="submit" value="Publicar">
         </form>

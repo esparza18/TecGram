@@ -18,7 +18,7 @@ Crear nueva publicación
     
     </div>
     <div class="md:w-1/2 px-10 w-4/12 bg-blue-900 p-6 rounded-lg shadow-xl">
-        <form action="{{route('cuenta.store')}}" method="POST">
+        <form action="{{route('muro.store')}}" method="POST">
             @csrf
            <div class="mb-5">
             <label class="mb-2 block text-white font-bold uppercase" for="titulo">Título</label>
